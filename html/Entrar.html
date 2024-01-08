@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+
+<!--Head-Entrar-->
+    <head>
+        <title>Cuidar+</title>
+        <link rel="stylesheet" href="Pagina_Inicial.css">
+        <script src="Pagina_Inicial.js" defer></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style>
+            body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+        
+            body {
+                font-family: Helvetica;
+                margin: 0;
+                background: rgb(111,193,145);
+            }
+
+
+            .hero {
+                background-color: rgb(111, 193, 145);
+                color: #fff;
+                padding: 10px;
+                background-size: cover;
+            }
+
+            .hero nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+            }
+
+            .hero nav li {
+                display: inline-block;
+                font-family: Helvetica;
+                font-size: 10px;
+                width: 100px;
+            }
+
+            @keyframes zoom {
+                from {scale: 1} 
+                to {scale: 1.3}
+            }
+
+            .hero nav li:hover {
+                animation-name: zoom;
+                animation-duration: 0.5s;
+                animation-fill-mode: forwards;
+            }
+
+            .hero nav a{
+                color: white;
+                text-decoration: none;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+            }
+
+            .logo{
+                display: inline-block;
+                width: auto;
+            }
+
+            .hero hr{
+                border: 1px solid white;
+            }
+
+            .carrossel-cont {
+                max-width: 1000px;
+                position: relative;
+                margin: auto;
+            }
+
+            .mySlides {
+                display: none;
+            }
+
+            .prev, .next {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                margin-top: -22px;
+                padding: 16px;
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+            }
+
+            .next {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+
+            .prev:hover, .next:hover {
+                background-color: rgba(113, 113, 113, 0.8);
+            }
+            
+            .dot {
+                cursor: pointer;
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: rgb(244, 244, 244);
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+            
+            .active, .dot:hover {
+                background-color: #717171;
+            }
+            
+            .fade {
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+            
+            @keyframes fade {
+                from {opacity: .4} 
+                to {opacity: 1}
+            }
+
+            .rodape{
+                color: rgb(244, 244, 244);
+                background-color: #717171;
+                font-size: 10px;
+                text-align: center;
+                padding-top: 25px;
+                padding-bottom: 25px;
+                margin-bottom: 0;
+            }
+
+            .contactos {
+                text-align:left;
+                letter-spacing: 2px;
+                color: white;
+                text-transform: uppercase;
+            }
+
+            .footer ul {
+                list-style-type: none;
+            }
+        </style>
+    </head>
+
+<!--Body Entrar-->
+    <body>
+        <div id="principal">
+            <header class="hero">
+              <nav>
+                <ul>
+                  <a class="logo" href="Pagina_Inicial.html" target="_self"><img src="Imagens/Logo.png" alt="" width=20%></a>
+    
+                  <hr><br>
+    
+                  <li> <a href="Sobre.html" target="_self"><img src="Imagens/Sobre.png" alt="" width=25%><figcaption>Sobre</figcaption></a></li>
+                  <li> <a href="Marcacoes.html" target="_self"><img src="Imagens/Marcacoes.png" alt="" width=25%><figcaption>Marcações</figcaption></a></li>
+                  <li> <a href="Produtos.html" target="_self"><img src="Imagens/Produtos.png" alt="" width=25%><figcaption>Produtos</figcaption></a></li>
+                  <li> <a href="Entrar.html" target="_self"><img src="Imagens/Utilizador.png" alt="" width=25%><figcaption>Perfil</figcaption></a></li>
+                  <li> <a href="Carrinho.html" target="_self"><img src="Imagens/Carrinho.png" alt="" width=25%><figcaption>Carrinho</figcaption></a></li>
+                </ul>
+              </nav>
+              <br/><hr><br/><br/>
+            </header>
+    <main>
+        <!-- ProfilePage Section -->
+        <div id="profilePage" style="display: none;">
+                <h2>Perfil do Utilizador</h2>
+                <h3> Bem Vindo,</h3>
+                <div id="userData"></div>
+                <div id="userDetails"></div>
+                
+        </div>
+            <style>
+                #profilePage {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100vh;
+                    color: white;
+                    text-align: center;
+                }
+                #profilePage button {
+                    font-size: 20px; /* Increase the font size */
+                    margin-top: 30px; /* Add margin-top to move the button lower */
+                }
+            </style>
+
+        <!-- Perfil Section--> 
+        <div class="welcome-message">
+            <h3>Bem Vindo à sua Farmácia Online!</h3>
+        </div>
+            <style>
+                    .body {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100vh;
+                    margin: 0;
+                    }
+
+                    .welcome-message {
+                    text-align: center;
+                    color: #fff;
+                    }
+            </style>
+
+        <div id="signInPage">
+            <div class="container">
+                <h2 style="margin-top: 0;">Sign In</h2>
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" placeholder="Enter your username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" placeholder="Enter your password">
+                </div>
+                <div class="form-group">
+                        <button onclick="signIn()">Sign In</button>
+                    </div>
+                    <div class="options">
+                        
+                        <a href="reset_pass.html">Forgot password?</a>
+                    </div>
+                    <hr>
+                    <h2>Create Account</h2>
+                    
+                    <div class="form-group">
+                        <label for="Name">Nome:</label>
+                        <input type="text" id="Name" placeholder="Introduza o seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="DB">Data de Nascimento:</label>
+                        <input type="text" id="DB" placeholder="Introduza a data (dd-mm-aaaa)">
+                    </div>
+                    <div class="form-group">
+                        <label for="newUsername">New Username:</label>
+                        <input type="text" id="newUsername" placeholder="Enter a new username">
+                    </div>
+                    <div class="form-group">
+                        <label for="newPassword">New Password:</label>
+                        <input type="password" id="newPassword" placeholder="Enter a new password">
+                    </div>
+                    <div class="form-group">
+                        <button onclick="createAccount()">Create Account</button>
+                    </div>
+                    
+
+                    <!-- User Data Section -->
+                    <div id="userData" style="display: none;"></div>
+                    <div id="userDetails"></div>
+                        
+
+                    <!-- Return Links -->
+                    <div class="options">
+                        <a href="Entrar.html" id="signinLink" style="display: none;">Sign In</a>
+                        <a href="Entrar.html" id="createAccountLink" style="display: none;">Create Account</a>
+                    </div>
+
+                </div>
+            </div>
+              <style>
+                .container {
+                  width: 400px;
+                  margin: auto;
+                  padding: 20px;
+                  border: 3px solid #ccc;
+                  background-color: rgb(111, 193, 145);
+                  border-radius: 5px;
+                }
+            
+                .form-group {
+                  margin-bottom: 10px;
+                }
+            
+                .form-group label {
+                  display: block;
+                  margin-bottom: 5px;
+                }
+            
+                .form-group input {
+                  width: 100%;
+                  padding: 5px;
+                  border: 1px solid #ccc;
+                  border-radius: 3px;
+                }
+            
+                .form-group button {
+                  width: 100%;
+                  padding: 10px;
+                  background-color: rgb(213, 219, 216);
+                  color: rgb(24, 24, 24);
+                  border: none;
+                  border-radius: 3px;
+                }
+            
+                .options {
+                  text-align: center;
+                  margin-top: 20px;
+                }
+            
+                .options a {
+                  margin-right: 10px;
+                }
+              </style>
+
+              
+            <script>
+                function switchToSignIn() {
+                  document.getElementById('signInPage').style.display = 'block';
+                  document.getElementById('profilePage').style.display = 'none';
+                }
+              
+                function signIn() {
+                    var username = document.getElementById("username").value;
+                    var password = document.getElementById("password").value;
+
+                    // Retrieve the updated password from localStorage
+                    var updatedPassword = localStorage.getItem("updatedPassword");
+
+                    // Check if the saved credentials match the input, including the updated password
+                    if (
+                        localStorage.getItem("username") === username &&
+                        (localStorage.getItem("password") === password || updatedPassword === password)
+                    ) {
+                        document.getElementById('signInPage').style.display = 'none';
+                        document.getElementById('profilePage').style.display = 'block';
+                        // Show user data
+                        document.getElementById('userData').textContent = "Username: " + username;
+                        
+                    } else {
+                        // Validation failed, show an error message
+                        alert("Invalid username or password. Please try again.");
+                    }
+                    }
+                
+              
+                function createAccount() {
+                  var newUsername = document.getElementById("newUsername").value;
+                  var newPassword = document.getElementById("newPassword").value;
+              
+                  // Check if the username already exists
+                  if (localStorage.getItem("username") === newUsername) {
+                    alert("Username already exists. Please choose a different username.");
+                    return; // Stop the function execution
+                  }
+              
+                  // Save the new account details in localStorage
+                  localStorage.setItem("username", newUsername);
+                  localStorage.setItem("password", newPassword);
+                  
+                  // Show a success message
+                  alert("Account created successfully! You can now sign in.");
+                  // Clear the input fields
+                  document.getElementById("newUsername").value = "";
+                  document.getElementById("newPassword").value = "";
+                
+                }
+              
+                function logOut() {
+                  // Clear the user data and switch back to the sign-in page
+                  document.getElementById('signInPage').style.display = 'block';
+                  document.getElementById('profilePage').style.display = 'none';
+                  document.getElementById('userData').textContent = ""; // Clear user data
+                  // Remove the authentication status and user profile data
+                    sessionStorage.removeItem('isLoggedIn');
+                    sessionStorage.removeItem('userProfileData');
+                    
+                    // Redirect the user back to the sign-in page
+                    window.location.href = 'Entrar.html';
+                }
+              </script>
+    </main>
+            <footer>
+                <section>
+                    <p class="contactos"><b>Contactos</b></p>
+                    <ul>
+                        <li>+351 232 456 789</li>
+                    </ul>
+                </section>
+                <div>
+                    <p class="rodape">Copyright &copy; 2023</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
+    

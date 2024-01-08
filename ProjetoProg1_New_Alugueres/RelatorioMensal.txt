@@ -1,0 +1,16 @@
+Relatório dos alugueres feitos em 06/2023:
+
+ID Imóvel: 2
+Cliente: leonardo Pereira
+NIF cliente: 1
+Período de aluguer: 05/06/2023 - 12/06/2023
+Preço: 700.00
+
+------------------------------
+ID Imóvel: 2
+Cliente: leonardo Pereira
+NIF cliente: 1
+Período de aluguer: 05/06/2023 - 12/06/2023
+Preço: 700.00
+
+------------------------------

@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "imoveis.h": "c",
+        "stdio.h": "c",
+        "stdlib.h": "c",
+        "listadupla.h": "c",
+        "queue.h": "c",
+        "clientes.h": "c",
+        "string.h": "c",
+        "01_EI.C": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "enabled"
+}

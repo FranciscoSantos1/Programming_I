@@ -1,0 +1,76 @@
+void *malloc(int nbytes);
+
+malloc -> memory alocation
+
+int main(){
+
+	char *str = NULL;
+
+	str = (char *) malloc(100);
+
+	if(str == NULL){
+		printf("Out memory");
+		return -1;
+	}
+	strcpy(str, "Viana do Castelo - Praia Norte\n");
+	printf("%s",str);
+
+	free(str);
+
+}
+======================================================================================================================================
+FUNÇÕES 
+
+void *malloc(int nbytes);
+
+void *calloc(int nBlock, int size);
+
+free(void *ptr);
+
+void *realloc(void  *ptr., int size);
+======================================================================================================================================
+
+
+int main (){
+	
+	float *notas = NULL;
+	int size = 0;
+	
+	printf("Introduza o numeros de alunos:\n");
+	scanf("%d",&qtd);
+	
+	notas = (float *) calloc(qtd, sizeof(float));
+	
+	if( notas == NULL){
+		printf("Out of memory"\n);
+		return -1;
+	}
+
+	return 0;
+}
+
+======================================================================================================================================
+
+int main(){
+
+	char *cidade = NULL;
+	
+	cidade = (char *) calloc(6, sizeof(char));
+
+	if(cidadde == NULL){
+		printf("ERROS ao reservar memoria\n");
+		return -1;
+	} 
+	strcpy(cidade, "Viana Do Castelo");
+	
+	cidade = (char *) realloc(cidade, 50 * sizeof(char));
+	strcat(cidade, " - Praia norte\n");
+	printf("%s\n",cidade);
+}
+
+
+
+
+
+
+

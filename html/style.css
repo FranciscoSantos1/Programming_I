@@ -1,0 +1,153 @@
+body {
+  font-family: Helvetica;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+.hero {
+  background-color: rgb(111, 193, 145);
+  color: #fff;
+  padding: 10px;
+  background-size: cover;
+}
+
+.hero nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.hero nav li {
+  display: inline-block;
+  font-family: Helvetica;
+  font-size: 10px;
+  width: 100px;
+}
+
+@keyframes zoom {
+  from {scale: 1} 
+  to {scale: 1.3}
+}
+
+.hero nav li:hover {
+  animation-name: zoom;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.hero nav a{
+  color: white;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.logo{
+  display: inline-block;
+  width: auto;
+}
+
+.hero hr{
+  border: 1px solid white;
+}
+  
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+  
+h1 {
+  margin: 20px 0 10px;
+  text-align: center;
+  margin-top: -200px;
+}
+
+h2, h3 {
+  margin: 20px 0 10px;
+  text-align: center;
+}
+  
+h2 {
+  font-size: 20px;
+  color: rgb(111, 193, 145)
+}
+  
+h4 {
+  font-size: 16px;
+  color: black;
+}
+  
+p {
+  margin: 10px 0;
+  color: black;
+}
+  
+button {
+  background-color:  rgb(111, 193, 145);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+  
+label {
+  font-size: 16px;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  margin: 0 auto;
+  max-width: 3000px;
+  float: left;
+  margin-left: 220px;
+  margin-top: -335px;
+  background-color: #fff;
+}
+
+#filtro {
+  width: 200px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  /* border-right: 1px solid #ccc; */
+  /*border-bottom: 1px solid #ccc;*/
+  height: 100%;
+  display: inline-block;
+}
+
+
+.grid-item {
+  padding: 50px;
+  text-align: center;
+  justify-content: center;
+}
+
+  /* Estilos para as imagens */
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+  /* Estilos para as descrições */
+.grid-item h3 {
+  margin-top: 0;
+}
+
+.grid-item p {
+  font-size: 0.8em;
+  color: #666;
+}
+
+  
+  
+ 
+
+  
